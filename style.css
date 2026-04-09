@@ -1,0 +1,152 @@
+:root {
+  color-scheme: dark;
+  --bg: #000;
+  --fg: #fff;
+  --fg-dim: rgba(255, 255, 255, 0.85);
+  --fg-faint: rgba(255, 255, 255, 0.5);
+  --accent: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg-dim);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--fg-faint);
+  text-decoration: none;
+  margin-bottom: 32px;
+  transition: color 0.15s;
+}
+
+.back-link:hover {
+  color: var(--fg-dim);
+}
+
+h1 {
+  color: var(--fg);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+
+.last-updated {
+  font-size: 12px;
+  color: var(--fg-faint);
+  margin-bottom: 32px;
+}
+
+h2 {
+  color: var(--fg);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 36px;
+  margin-bottom: 14px;
+  padding-top: 8px;
+}
+
+h3 {
+  color: var(--fg);
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 14px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 36px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+}
+
+table th, table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+table th {
+  color: var(--fg);
+  font-weight: 600;
+  background: var(--accent);
+}
+
+a {
+  color: rgba(120, 180, 255, 0.9);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(120, 180, 255, 0.3);
+}
+
+a:hover {
+  color: rgba(150, 200, 255, 1);
+  border-bottom-color: rgba(150, 200, 255, 0.6);
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 11px;
+  color: var(--fg-faint);
+}
+
+strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 32px 20px 60px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  body {
+    font-size: 13px;
+  }
+}
